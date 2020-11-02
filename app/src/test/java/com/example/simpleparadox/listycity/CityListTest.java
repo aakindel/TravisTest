@@ -33,7 +33,7 @@ class CityListTest {
     void testDelete() {
         CityList cityList = mockCityList();
 
-        assertEquals(0, cityList.getCities().size());
+        assertEquals(1, cityList.getCities().size());
 
         City edmonton = cityList.getCities().get(0);
         cityList.delete(edmonton);  // test for a city that was already in list
